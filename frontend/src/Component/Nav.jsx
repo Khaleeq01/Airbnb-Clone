@@ -57,6 +57,7 @@ const Nav = () => {
   }
 
    useEffect(()=>{
+   if (input.trim() === "") return;
    handleSearch(input)
    },[input])
 
